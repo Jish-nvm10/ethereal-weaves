@@ -260,6 +260,7 @@ nav ul li a {
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s ease;
+    margin-left: 15px; /* Add space between text and button */
 }
 
 .remove-btn:hover {
@@ -270,8 +271,11 @@ nav ul li a {
     outline: none;
 }
 
-/* Optional: Style the cart items container */
+/* Style the cart items container */
 .cart-item {
+    display: flex;  /* Arrange items in a row */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space out elements */
     margin-bottom: 20px;
     padding: 10px;
     background-color: #f9f9f9; /* Light background */
@@ -279,9 +283,17 @@ nav ul li a {
     border-radius: 8px;
 }
 
+/* Product image styling */
 .cart-item img {
+    width: 50px; /* Adjust image size */
+    height: auto;
     margin-right: 10px;
     border-radius: 5px;
+}
+
+/* Item details container */
+.cart-item .item-details {
+    flex-grow: 1; /* Allow text to take remaining space */
 }
 
 /* Style for the cart items text */
@@ -505,7 +517,7 @@ footer {
         padding: 14px;
         font-size: 18px;
     }
-}
+
 
 /* Extra Small Screens (Phones under 480px width) */
 @media (max-width: 480px) {
