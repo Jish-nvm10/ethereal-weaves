@@ -58,14 +58,6 @@ header img {
 }
 /* Cart Button */
 .cart-button {
-    position: absolute;
-    top: 50%;
-    right: 5%;
-    transform: translateY(-50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 20px;
     background-color: #ff6699;
     color: white;
     font-weight: bold;
@@ -76,7 +68,7 @@ header img {
 }
 
 .cart-button:hover {
-    background-color: #ff3385;
+    background-color: #ff3366;
 }
 
 /* Hero Section */
@@ -243,20 +235,27 @@ nav {
 }
 
 nav ul {
-    list-style: none; /* Removes bullet points */
     display: flex;
-    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
     padding: 0;
+    margin: 0;
+    gap: 15px; /* Adjusts spacing between links */
+    background-color: #ff99cc;
+    padding: 10px;
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: black;
     font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
 }
 /* Styling the remove button */
 .remove-btn {
