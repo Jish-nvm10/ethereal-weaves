@@ -57,11 +57,12 @@ header img {
 }
 /* Cart Button */
 .cart-button {
-    display: block; /* Ensures it takes full width */
-    width: 100%; /* Makes it span the container */
-    text-align: center; /* Centers the text */
-    padding: 10px 0; /* Adjust padding for better spacing */
-    background-color: #ff6699; /* Keep your theme color */
+    display: block;
+    width: fit-content;
+    margin: 0 auto; /* Centers the button */
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #ff6699;
     color: white;
     font-weight: bold;
     border: none;
