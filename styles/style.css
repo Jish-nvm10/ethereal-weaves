@@ -234,20 +234,27 @@ nav {
     padding: 15px;
 }
 
+nav {
+    background-color: #ff99cc; /* Ensures solid background */
+    padding: 0; /* Removes unnecessary padding */
+    margin: 0;
+    border: none; /* Ensures no border is applied */
+}
+
 nav ul {
     display: flex;
     align-items: center;
     justify-content: center;
     list-style: none;
-    padding: 0;
+    padding: 10px 0; /* Keeps spacing but avoids extra height */
     margin: 0;
     gap: 15px; /* Adjusts spacing between links */
-    background-color: #ff99cc;
-    padding: 10px;
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li a {
