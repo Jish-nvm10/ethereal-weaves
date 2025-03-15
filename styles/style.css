@@ -409,52 +409,91 @@ footer {
     background: #FFCCE5;
     color: #333;
 }
-
-/* Media Queries for small screens */
+/* Ensure buttons are properly aligned and responsive */
 @media (max-width: 768px) {
+    /* Center the header and navigation */
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
     .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .navbar ul {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .navbar ul li {
         margin: 10px 0;
     }
 
-    .cart-button {
-        margin-top: 10px;
-    }
-
-    #cart-items {
+    .nav-links {
         flex-direction: column;
+        gap: 10px;
     }
 
+    /* Make buttons full width for better touch usability */
+    .btn, 
+    .cart-button,
+    .checkout-btn,
+    .checkout-form button,
+    .product a,
+    .remove-btn,
+    .submit-btn {
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    /* Align cart items properly */
     .cart-item {
         flex-direction: column;
-        align-items: flex-start;
+        text-align: center;
     }
 
-    .remove-button {
-        margin-top: 10px;
+    /* Ensure checkout container stacks properly */
+    .checkout-container {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .checkout-form {
-        padding: 20px;
+    .order-summary, .checkout-form {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Ensure input fields are properly spaced */
+    .checkout-form input,
+    .checkout-form textarea,
+    .checkout-form select {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    /* Improve form submit button alignment */
+    .submit-btn {
+        padding: 14px;
+        font-size: 18px;
     }
 }
 
+/* Extra Small Screens (Phones under 480px width) */
 @media (max-width: 480px) {
-    .navbar ul li {
-        font-size: 14px;
+    .nav-links {
+        gap: 5px;
     }
 
-    .cart-button {
+    .btn, 
+    .cart-button,
+    .checkout-btn,
+    .checkout-form button,
+    .product a,
+    .remove-btn,
+    .submit-btn {
         font-size: 14px;
-        padding: 8px 15px;
+        padding: 10px;
+    }
+
+    .checkout-form input,
+    .checkout-form textarea,
+    .checkout-form select {
+        font-size: 13px;
+        padding: 8px;
     }
 }
+
