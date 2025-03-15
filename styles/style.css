@@ -57,14 +57,17 @@ header img {
 }
 /* Cart Button */
 .cart-button {
-    background-color: #ff66a3; /* Matching Ethereal Weaves theme */
+    display: block; /* Ensures it takes full width */
+    width: 100%; /* Makes it span the container */
+    text-align: center; /* Centers the text */
+    padding: 10px 0; /* Adjust padding for better spacing */
+    background-color: #ff6699; /* Keep your theme color */
     color: white;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 5px;
     font-weight: bold;
-    text-decoration: none;
-    transition: 0.3s;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .cart-button:hover {
