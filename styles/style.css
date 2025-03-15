@@ -418,13 +418,48 @@ footer {
     }
 
     .navbar {
-        margin: 10px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0;
+        background-color: #FEC8D8; /* Adjust to match your theme */
     }
 
     .nav-links {
+        display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 10px;
+        padding: 0;
     }
+
+    .nav-links a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    /* Fix cart button positioning */
+    .cart-button {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        width: 80px;
+        height: auto;
+        font-size: 14px;
+        text-align: center;
+        padding: 8px;
+        border-radius: 8px;
+    }
+
+    /* Adjust section padding to prevent overlap */
+    .hero-section {
+        padding-top: 80px;
+    }
+}
 
     /* Make buttons full width for better touch usability */
     .btn, 
