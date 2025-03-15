@@ -247,12 +247,12 @@ nav ul {
 }
 
 nav ul li {
-    display: inline-block;
+    display: inline;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: bold;
     padding: 8px 15px;
     border-radius: 5px;
